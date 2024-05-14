@@ -3,6 +3,7 @@
 }
 .terminal {
   --background: #17202a;
+
   --link-color: darkblue;
   --animation: terminal-underline;
   --line-thickness: 3;
@@ -10,14 +11,20 @@
   --animation: terminal-glow;
   --glow: 1;
   transition: --color 0.5s linear;
+
+  transition: --background 1s linear;
 }
 
 @property --color {
   syntax: "<color>";
   inherits: true;
-  initial-value: #ccc;
 }
 
+@property --background {
+  syntax: "<color>";
+  inherits: true;
+}
 .terminal:hover {
   --color: #7d3c98;
+  --background: black;
 }
