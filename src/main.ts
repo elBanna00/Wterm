@@ -1,5 +1,23 @@
-const commands = {};
+const commands = {
+  help() {
+    term.echo(`List of available commands: ${help}`);
+  },
 
+  echo(...args) {
+    if (args.length > 0) {
+      term.echo(args.join(" "));
+    }
+  },
+};
+const formatter = new Intl.ListFormat("en", {
+  style: "long",
+  type: "conjunction",
+});
+const command_list = Object.keys(commands);
+const formatted_list = command_list.map((cmd) => {
+  return `[[;#7D3C98;]${cmd}]`;
+});
+const help = formatter.format(formatted_list);
 const font = "ANSI Shadow";
 
 figlet.defaults({ fontPath: "https://unpkg.com/figlet/fonts/" });
@@ -14,15 +32,16 @@ function render(text) {
   });
 }
 
-const term = $("body").terminal(commands, {
+const term = $("#terminal").terminal(commands, {
   greetings: false,
+  checkArity: false,
 });
 term.pause();
 function ready() {
   term
     .echo(() => {
       const ascii = rainbow(render("WTerm"));
-      return `${ascii}[[;#E67E22 ;]\nHi,I'm Moaaz\nWelcome to my Website!\n]`;
+      return `${ascii}[[;#E67E22 ;]\nHi,I'm Moaaz\nWelcome to my Website!\n]\nType [[;#AD00F5;]help] to get started :)`;
     })
     .resume();
 }
@@ -45,3 +64,7 @@ function hex(color) {
       .join("")
   );
 }
+term.on("click", ".command", function () {
+  const command = $(this).text();
+  term.exec(command);
+});
