@@ -1,47 +1,77 @@
 export const directories = {
   education: [
     "",
-    "[[;#FFFFFF;]education]",
+    "<div style='color:#5854CD'>education</div>",
 
-    '* <a href="https://en.wikipedia.org/wiki/Kielce_University_of_Technology">Kielce University of Technology</a> [[;#E7F034 ;]"Computer Science"] 2002-2007 / 2011-2014',
-    '* <a href="https://pl.wikipedia.org/wiki/Szko%C5%82a_policealna">Post-secondary</a> Electronic School [[;#E7F034 ;]"Computer Systems"] 2000-2002',
-    '* Electronic <a href="https://en.wikipedia.org/wiki/Technikum_(Polish_education)">Technikum</a> with major [[;#E7F034 ;]"RTV"] 1995-2000',
+    '* <a href="https://en.wikipedia.org/wiki/Ain_Shams_University" style="color:#5854CD">Ain Shams University </a>2018-2019 / 2022-2023 Faculty of Engineering , Computers and Systems Engineering ',
     "",
   ],
   projects: [
     "",
-    "[[;#FFFFFF;]Open Source projects]",
+    "<div style='color:white'>Open Source projects</div>",
     [
       [
-        "jQuery Terminal",
-        "https://terminal.jcubic.pl",
-        "library that adds terminal interface to websites",
+        "Graduation Project",
+        "https://github.com/elBanna00/E-learning-backend",
+        "AI assisted Language learning Website with the ability to generate questions , check for answers and generate a plethora exams for different topics and more",
       ],
       [
-        "LIPS Scheme",
-        "https://lips.js.org",
-        "Scheme implementation in JavaScript",
+        "scorch-staff",
+        "https://github.com/elBanna00/scorch-staff",
+        "Hotel Reservation Webapp for hotel staff",
       ],
-      ["Sysend.js", "https://jcu.bi/sysend", "Communication between open tabs"],
-      ["Wayne", "https://jcu.bi/wayne", "Pure in browser HTTP requests"],
+      [
+        "scorch",
+        "https://github.com/elBanna00/scorch",
+        "Hotel Reservation Website for hotel Customers",
+      ],
+      [
+        "moharir",
+        "https://moharir.vercel.app/",
+        "Online vim Code editor written with nextjs App router",
+      ],
+      [
+        "RSS feed Aggregator",
+        "https://github.com/elBanna00/rss_agg",
+        "RSS feed aggregator Web API written in GO",
+      ],
+      [
+        "Dijkstra Visualizer",
+        "https://github.com/elBanna00/dijkstraVis",
+        "Visualizer for the dijkstra algorithm React App",
+      ],
+      [
+        "Sorting Visualizer",
+        "elbanna00.github.io/sorting-visualizer/",
+        "Visualizer Webapp for multiple sorting algorithms",
+      ],
     ].map(([name, url, description = ""]) => {
-      return `* <a href="${url}">${name}</a> &mdash; [[;#FFFFFF;]${description}]`;
+      return `* <a href="${url}" style="color:#5854CD">${name}</a> &mdash;<div style="color:#FFFFFF">${description}</div>`;
     }),
     "",
   ].flat(),
   skills: [
     "",
-    "[[;#FFFFFF;]languages]",
+    "<div style='color:#FFFFFF'>languages</div>",
 
-    ["JavaScript", "TypeScript", "Python", "SQL", "PHP", "Bash"].map(
-      (lang) => `* [[;#E7F034 ;]${lang}]`
+    ["JavaScript", "TypeScript", "Java", "SQL", "Go", "Bash", "Lua"].map(
+      (lang) => `<div style='color:#E7F034'>* ${lang}</div>`
     ),
     "",
-    "[[;#FFFFFF;]libraries]",
-    ["React.js", "Redux", "Jest"].map((lib) => `* [[;#24BB14;]${lib}]`),
+    "<div style='color:#FFFFFF'>libraries</div>",
+    [
+      "React.js",
+      "React-Query",
+      "Expressjs",
+      "Nextjs",
+      "Jquery",
+      "TailwindCss",
+    ].map((lib) => `<div style='color:#24BB14'>* ${lib}</div>`),
     "",
-    "[[;#FFFFFF;]tools]",
-    ["Docker", "git", "GNU/Linux"].map((lib) => `* [[;#122BCA;]${lib}]`),
+    "<div style='color:#FFFFFF'>tools</div>",
+    ["Vim", "git", "GNU/Linux"].map(
+      (lib) => `<div style='color:#5854CD'>* ${lib}</div>`
+    ),
     "",
   ].flat(),
 };
