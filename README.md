@@ -5,6 +5,7 @@ Welcome to my terminal-based portfolio website! This project showcases my Experi
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
+- [Demo](#demo)
 - [Screenshots](#screenshots)
 - [Contact](#contact)
 
@@ -18,6 +19,11 @@ Welcome to my terminal-based portfolio website! This project showcases my Experi
 ## Screenshots
 
 
+## Demo
+
+You might have to refresh if its your first time using the site :)
+
+https://wterm-two.vercel.app/
 
 ## Contact
 
