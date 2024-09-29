@@ -12,9 +12,9 @@ Welcome to my terminal-based portfolio website! This project showcases my Experi
 
 ## Technologies Used
 
-- **TypeScript:** 
+- **TypeScript** 
 - **jQuery Terminal:** A versatile library for creating terminal-like interfaces in web applications.
-- **HTML5 & CSS3:** 
+- **HTML5 & CSS3** 
 
 ## Screenshots
 
@@ -25,9 +25,3 @@ You might have to refresh if its your first time using the site :)
 
 https://wterm-two.vercel.app/
 
-## Contact
-
-If you have any questions or feedback, feel free to reach out:
-
-- **Email:** moaazibrahim3@gmail.com
-- **GitHub:** [Your GitHub Profile](https://github.com/elBanna00)
